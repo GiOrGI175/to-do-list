@@ -1,0 +1,46 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --bodyColor: #0d0714;
+  --mainboxColor: #1d1825;
+  --borderColot: #9e78cf;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bodyColor);
+}
+
+.main_box {
+  width: 583px;
+  height: 758px;
+  background-color: var(--mainboxColor);
+}
+
+.input_box {
+  width: 432px;
+  height: 40px;
+  margin: 54px 0px 0px 65px;
+}
+
+.input_style {
+  width: 381px;
+  height: 40px;
+  border-radius: 10px;
+  padding: 10px -0px 10px 15px;
+  background-color: transparent;
+  border: 1px solid var(--borderColot);
+}
+
+.append_clickS {
+  width: 40px;
+  height: 40px;
+  border: 10px;
+  background-color: var(--borderColot);
+}
