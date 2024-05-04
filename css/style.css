@@ -99,6 +99,32 @@ body {
   cursor: pointer;
 }
 
+.img_div_size {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.default_arrow_displayNone {
+  width: 22px;
+  height: 22px;
+  display: none;
+}
+
+.default_arrow_displayNone_2 {
+  width: 22px;
+  height: 22px;
+  display: none;
+}
+
+.default_arrow_sidplayblock_2 {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
 .remove_btn {
   background-color: transparent;
   border: none;

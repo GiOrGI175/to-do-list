@@ -56,20 +56,24 @@ createBtn.addEventListener('click', function () {
 
     done_btn.appendChild(imgdiv);
 
+    imgdiv.classList.add('img_div_size');
+
     imgdiv.appendChild(Image);
 
     done_btn.classList.add('done_btn');
 
+    let imgCheckArrow = document.createElement('Img');
+
+    imgCheckArrow.src = './img/Check_arrow.svg';
+
+    imgCheckArrow.classList.add('default_arrow_displayNone_2');
+
+    imgdiv.appendChild(imgCheckArrow);
+
     done_btn.addEventListener('click', function (event) {
-      // let greenarrow = event.currentTarget;
+      Image.classList.toggle('default_arrow_displayNone');
 
-      // imgdiv.remove(Image);
-
-      // Image.src = './img/Check_arrow.svg';
-
-      // imgdiv.appendChild(Image);
-
-      //cvlileba aq
+      imgCheckArrow.classList.toggle('default_arrow_sidplayblock_2');
 
       let pelemetn = liList.firstElementChild.querySelector('p');
 
