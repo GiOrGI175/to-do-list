@@ -9,6 +9,7 @@
   --mainboxColor: #1d1825;
   --borderColot: #9e78cf;
   --libackgroubd: #15101c;
+  --colorWhite: #ffffff;
 }
 
 body {
@@ -59,8 +60,11 @@ body {
   margin: 59px 0px 0px 65px;
 }
 
-/* .to_do_counter {
-} */
+.to_do_counter {
+  font-weight: 400;
+  line-height: 19px;
+  color: var(--colorWhite);
+}
 
 .li_style {
   width: 432px;
@@ -80,6 +84,7 @@ body {
   width: 300px;
   overflow: hidden;
   text-overflow: ellipsis;
+  /* text-decoration: line-through; */
 }
 
 .done_btn {
@@ -93,3 +98,5 @@ body {
   border: none;
   cursor: pointer;
 }
+
+/* text-decoration: line-through; */
