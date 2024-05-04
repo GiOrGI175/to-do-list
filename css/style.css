@@ -10,6 +10,7 @@
   --borderColot: #9e78cf;
   --libackgroubd: #15101c;
   --colorWhite: #ffffff;
+  --doneColor: #78cfb0;
 }
 
 body {
@@ -85,6 +86,11 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   /* text-decoration: line-through; */
+}
+
+.li_style_done {
+  text-decoration: line-through !important;
+  color: var(--doneColor) !important;
 }
 
 .done_btn {

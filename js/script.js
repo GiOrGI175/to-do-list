@@ -60,6 +60,11 @@ createBtn.addEventListener('click', function () {
 
     done_btn.classList.add('done_btn');
 
+    done_btn.addEventListener('click', function () {
+      let pelemnt = document.querySelector('.span_size p');
+      pelemnt.classList.add('li_style_done');
+    });
+
     //append li list done_btn >]
 
     //append li list remove_btn [<
