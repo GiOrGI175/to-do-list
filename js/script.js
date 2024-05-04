@@ -115,16 +115,10 @@ createBtn.addEventListener('click', function () {
     liArray.push(liList);
 
     console.log(liArray);
-
-    let count = 0;
-
-    for (let i = 0; i < liArray.length; i++) {
-      count++;
-    }
-
-    let to_do_counter = document.querySelector('.to_do_counter');
-    to_do_counter.textContent = `Tasks to do-${count}`;
   }
 
   input.value = '';
+
+  let to_do_counter = document.querySelector('.to_do_counter');
+  to_do_counter.textContent = `Tasks to do-${liArray.length}`;
 });
