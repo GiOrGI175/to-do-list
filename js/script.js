@@ -60,7 +60,17 @@ createBtn.addEventListener('click', function () {
 
     done_btn.classList.add('done_btn');
 
-    done_btn.addEventListener('click', function () {
+    done_btn.addEventListener('click', function (event) {
+      // let greenarrow = event.currentTarget;
+
+      // imgdiv.remove(Image);
+
+      // Image.src = './img/Check_arrow.svg';
+
+      // imgdiv.appendChild(Image);
+
+      //cvlileba aq
+
       let pelemetn = liList.firstElementChild.querySelector('p');
 
       pelemetn.classList.toggle('li_style_done');
