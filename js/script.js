@@ -61,8 +61,9 @@ createBtn.addEventListener('click', function () {
     done_btn.classList.add('done_btn');
 
     done_btn.addEventListener('click', function () {
-      let pelemnt = document.querySelector('.span_size p');
-      pelemnt.classList.add('li_style_done');
+      let pelemetn = liList.firstElementChild.querySelector('p');
+
+      pelemetn.classList.toggle('li_style_done');
     });
 
     //append li list done_btn >]
@@ -78,6 +79,13 @@ createBtn.addEventListener('click', function () {
     imgdivR.appendChild(Image_2);
 
     remove_btn.classList.add('remove_btn');
+
+    remove_btn.addEventListener('click', function (event) {
+      let li = event.currentTarget.parentElement;
+      console.log(li);
+
+      li.remove();
+    });
 
     //append li list remove_btn >]
   }
