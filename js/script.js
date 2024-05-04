@@ -1,3 +1,7 @@
+let liArray = [];
+
+// console.log(liArray);
+
 let createBtn = document.querySelector('.append_click');
 
 createBtn.addEventListener('click', function () {
@@ -70,7 +74,7 @@ createBtn.addEventListener('click', function () {
 
     imgdiv.appendChild(imgCheckArrow);
 
-    done_btn.addEventListener('click', function (event) {
+    done_btn.addEventListener('click', function () {
       Image.classList.toggle('default_arrow_displayNone');
 
       imgCheckArrow.classList.toggle('default_arrow_sidplayblock_2');
@@ -96,15 +100,31 @@ createBtn.addEventListener('click', function () {
 
     remove_btn.addEventListener('click', function (event) {
       let li = event.currentTarget.parentElement;
-      console.log(li);
 
       li.remove();
+
+      liArray.pop();
     });
 
     //append li list remove_btn >]
+
+    // console.log(liList);
+
+    // let liArray = [];
+
+    liArray.push(liList);
+
+    console.log(liArray);
+
+    let count = 0;
+
+    for (let i = 0; i < liArray.length; i++) {
+      count++;
+    }
+
+    let to_do_counter = document.querySelector('.to_do_counter');
+    to_do_counter.textContent = `Tasks to do-${count}`;
   }
 
   input.value = '';
 });
-
-// default_arrow.svg
