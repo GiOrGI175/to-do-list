@@ -1,6 +1,8 @@
 let liArray = [];
 
-// console.log(liArray);
+function delteli() {
+  return liArray.pop();
+}
 
 let createBtn = document.querySelector('.append_click');
 
@@ -103,14 +105,13 @@ createBtn.addEventListener('click', function () {
 
       li.remove();
 
-      liArray.pop();
+      delteli();
+      to_do_counter.textContent = `Tasks to do-${liArray.length}`;
+
+      // liArray.pop();
     });
 
     //append li list remove_btn >]
-
-    // console.log(liList);
-
-    // let liArray = [];
 
     liArray.push(liList);
 
